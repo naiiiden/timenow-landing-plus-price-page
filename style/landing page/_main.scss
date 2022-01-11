@@ -1,0 +1,166 @@
+main {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h1 {
+        color: #1d1b67;
+    }
+
+    p {
+        color: #425466;
+    }
+
+    a {
+        color: #425466;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .links_row {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        
+        button {
+            border: none;
+            background: #1d1b67;
+            color: #fff;
+            padding: 1rem;
+            border-radius: .5rem;
+            font-weight: 700;
+    
+            a {
+                color: #fff;
+                font-weight: 700;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .data_container {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+
+.mockup {
+    display: none;
+}
+
+.illustration_container {
+    background: #46ccde;
+    padding: 1.5rem;
+}
+
+.main_illustration_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .bluebg {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        right: 0;
+        background: #46ccde;
+        z-index: -1;
+    }
+    
+    
+    .header_main_wrapper {
+        height: 100vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .mockup {
+        display: block;
+    }
+
+    .header_main_wrapper {
+        position: relative;
+    }
+
+    .main_illustration_wrapper {
+        flex-direction: row;
+        padding: 0 3rem;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        main {
+            gap: 1.5rem;
+            padding: 0;
+            padding-right: 3rem;
+            width: 50%;
+
+            .links_row {
+                flex-direction: column;
+                align-self: flex-start;
+            }
+        }
+
+        .mockup {
+            position: absolute;
+            padding: 0 1.5rem;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main_illustration_wrapper {
+        padding: 0 12rem;
+        width: 100%;
+        gap: 3rem;
+        justify-content: space-between;
+        
+        main {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .links_row {
+                flex-direction: row;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .main_illustration_wrapper {
+
+        main {
+            h1 {
+                font-size: 4rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+        }
+
+        .mockup {
+            max-height: 40rem;
+        }
+    }
+}
