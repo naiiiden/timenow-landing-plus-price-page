@@ -94,7 +94,7 @@ img {
     background: #1d1b67;
     color: #fff;
     padding: .75rem;
-    border-radius: .5rem;
+    border-radius: .25rem;
   }
 }
 
@@ -142,8 +142,8 @@ img {
   header nav .nav-ul a.scheduling_link {
     background: #1d1b67;
     color: #fff;
-    padding: .75rem;
-    border-radius: .5rem;
+    padding: 1rem;
+    border-radius: .25rem;
     font-weight: 700;
   }
 }
@@ -195,7 +195,7 @@ main .links_row button {
   background: #1d1b67;
   color: #fff;
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: .25rem;
   font-weight: 700;
 }
 
@@ -424,7 +424,7 @@ main .data_container a {
 
 @media screen and (min-width: 1024px) {
   .people {
-    padding: 4rem 12rem;
+    padding: 6rem 12rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -518,7 +518,7 @@ main .data_container a {
   background: #1d1b67;
   color: #fff;
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: .25rem;
   font-weight: 700;
 }
 
@@ -543,7 +543,7 @@ main .data_container a {
 
 @media screen and (min-width: 1024px) {
   .features {
-    padding: 4rem 12rem;
+    padding: 6rem 12rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -706,7 +706,7 @@ footer form .email_container .submit {
 
 @media screen and (min-width: 1024px) {
   footer {
-    padding: 4rem 12rem;
+    padding: 6rem 12rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
