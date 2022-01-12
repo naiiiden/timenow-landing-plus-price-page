@@ -1,0 +1,83 @@
+.features {
+    background: #cdf9ff;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+
+    .text_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+
+        .bluecolor {
+            color: #3b60bf;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: #005661;
+            font-size: 2rem;
+        }
+
+        p {
+            color: #425466;
+            font-weight: 500;
+        }
+
+        button {
+            border: none;
+            background: #1d1b67;
+            color: #fff;
+            padding: 1rem;
+            border-radius: .5rem;
+            font-weight: 700;
+    
+            a {
+                text-decoration: none;
+                color: #fff;
+                font-weight: 700;
+                font-size: 1rem;
+            }
+        }
+
+        .demo {                
+            color: #425466;
+            font-weight: 700;
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .features {
+        padding: 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .features {
+        padding: 4rem 12rem;
+        flex-direction: row;
+
+        .text_wrapper {
+            gap: 1.5rem;
+
+            p {
+                font-size: 1.1rem;
+            }
+    
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            .demo {
+                padding-top: 1rem;
+            }
+
+        }
+
+    }
+}
