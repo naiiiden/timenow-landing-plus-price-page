@@ -157,4 +157,247 @@ img {
     padding: 3rem 12rem;
   }
 }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2196F3;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+main {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+main .text_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+main .text_container h1 {
+  font-size: 2.75rem;
+}
+
+main .text_container p {
+  color: #425466;
+}
+
+main .monthly_yearly_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+main .monthly_yearly_wrapper span {
+  color: #425466;
+  font-size: .9rem;
+}
+
+.prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.pricing_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pricing_container .box {
+  border: 1px solid #cdcdcd;
+  border-radius: .25rem;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pricing_container .box .price {
+  color: #000;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.pricing_container .box .price span {
+  color: #425466;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.pricing_container .box p {
+  color: #425466;
+}
+
+.pricing_container .box .checkmarks_container {
+  border-top: 1px solid #cdcdcd;
+  padding-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.pricing_container .box .checkmarks_container .checkmark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .75rem;
+}
+
+.pricing_container .box button {
+  border: none;
+  border-radius: .25rem;
+  background: #1d1b67;
+  padding: 1rem;
+}
+
+.pricing_container .box a {
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding: 0 3rem 3rem 3rem;
+  }
+  .pricing_container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .pricing_container .cheap, .pricing_container .expensive {
+    width: 48%;
+  }
+  .pricing_container .cheap button, .pricing_container .expensive button {
+    margin-top: auto;
+  }
+  .pricing_container .medium {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 0 12rem 6rem 12rem;
+    gap: 3rem;
+  }
+  .prices {
+    gap: 3rem;
+  }
+  .pricing_container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 3rem;
+  }
+  .pricing_container .cheap, .pricing_container .expensive, .pricing_container .medium {
+    width: 100%;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+}
 /*# sourceMappingURL=style.css.map */
