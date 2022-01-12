@@ -159,8 +159,18 @@ main {
 
 @media screen and (min-width: 768px) {
     main {
-        padding: 0 3rem 3rem 3rem;
+        padding: 1.5rem 3rem;
+        
+        .text_container {
+            align-items: center;
+
+            h1 {
+                font-size: 3rem;
+                width: 80%;
+            }
+        }
     }
+
 
     .pricing_container {
         flex-direction: row;
@@ -182,7 +192,7 @@ main {
 
 @media screen and (min-width: 1024px) {
     main {
-        padding: 0 12rem 6rem 12rem;
+        padding: 5rem 12rem;
         gap: 3rem;
     }
 
@@ -197,6 +207,16 @@ main {
         .cheap, .expensive, .medium {
             width: 100%;
             height: min-content;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        .text_container {
+            p {
+                width: 50%;
+            }
         }
     }
 }
