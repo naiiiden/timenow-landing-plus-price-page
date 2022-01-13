@@ -1,29 +1,30 @@
+# TimeNow Landing & Pricing Page
+This is a solution to a challenge from CodeWell
 
-# Welcome to Codewell! 👋
+# screenshots
+### Mobile Design
+![mobile](/Design/landing_mobile.png)
 
-Codewell's aim is to provide you with real-world design templates that you can use to practice your HTML and CSS projects. 
+### Mobile Navigation
+![nav](/Design/mobile_nav.png)
 
-Free or paid, all templates are high quality and will make great portfolio pieces.
+### Tablet Design
+![tablet](/Design/landing_tablet.png)
 
-### I've completed the challenge, now what?
+### Desktop Design
+![desktop](/Design/landing_desktop.png)
 
-We recommend using one of these two websites to deploy your projects
+### Mobile Pricing Page
+![pricing mobile](/Design/pricing_mobile.png)
 
-- [GitHub Pages](https://pages.github.com/)
-- [Netlify](https://www.netlify.com/)
+### Tablet Pricing Page
+![pricing tablet](/Design/pricing_tablet.png)
 
-They're super easy to setup and you should have your website up and running in no time, just follow their instructions.
+### Desktop Pricing Page
+![pricing desktop](/Design/pricing_desktop.png)
 
+### Monthly Billing toggled
+![monthly](/Design/monthly_billing.png)
 
-### Submit your solution to Codewell
-
-Visit the relevant challenge on [Codewell](https://codewell.cc) and click on 'Submit Solution' right under the challenge.
-Enter all the title, Github repo URL, Live URL (Netlify or GH Pages), and tell the community what challenges you've faced.
-
-### Join our community on Slack
-
-If you want more real-time communication, you can visit our community on [Slack](https://join.slack.com/t/codewell-hq/shared_invite/zt-ni8c9g8h-gNYWrmqQ3Uh37dcLg9~LMQ). 
-
-### Fonts Used
-
-https://fonts.google.com/specimen/Inter
+## Live preview
+https://naiiiden.github.io/timenow-landing-plus-price-page/
