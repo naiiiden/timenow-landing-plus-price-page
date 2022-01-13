@@ -264,7 +264,7 @@ main .monthly_yearly_wrapper {
 
 main .monthly_yearly_wrapper span {
   color: #425466;
-  font-size: .9rem;
+  font-size: .8rem;
 }
 
 .prices {
@@ -278,27 +278,42 @@ main .monthly_yearly_wrapper span {
   gap: 2rem;
 }
 
-.monthly {
+.yearly {
   display: none;
 }
 
-.yearly_bold {
+.monthly_bold {
   font-weight: 700;
 }
 
 .change_prices .yearly {
-  display: none;
-}
-
-.change_prices .yearly_bold {
-  font-weight: 400;
-}
-
-.change_prices .monthly {
   display: block;
 }
 
+.change_prices .yearly_bold {
+  font-weight: 700;
+}
+
+.change_prices .monthly {
+  display: none;
+}
+
+.change_prices .monthly_bold {
+  font-weight: 400;
+}
+
 .pricing_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pricing_container .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -381,6 +396,9 @@ main .monthly_yearly_wrapper span {
   main {
     padding: 1.5rem 3rem;
   }
+  main .monthly_yearly_wrapper span {
+    font-size: .9rem;
+  }
   main .text_container {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -391,6 +409,9 @@ main .monthly_yearly_wrapper span {
     width: 80%;
   }
   .pricing_container {
+    gap: 2rem;
+  }
+  .pricing_container .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -398,13 +419,13 @@ main .monthly_yearly_wrapper span {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .pricing_container .cheap, .pricing_container .expensive {
+  .pricing_container .container .cheap, .pricing_container .container .expensive {
     width: 48%;
   }
-  .pricing_container .cheap button, .pricing_container .expensive button {
+  .pricing_container .container .cheap button, .pricing_container .container .expensive button {
     margin-top: auto;
   }
-  .pricing_container .medium {
+  .pricing_container .container .medium {
     width: 100%;
   }
 }
@@ -414,15 +435,21 @@ main .monthly_yearly_wrapper span {
     padding: 5rem 12rem;
     gap: 3rem;
   }
+  main .monthly_yearly_wrapper span {
+    font-size: 1rem;
+  }
   .prices {
     gap: 3rem;
   }
   .pricing_container {
+    gap: 3rem;
+  }
+  .pricing_container .container {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     gap: 3rem;
   }
-  .pricing_container .cheap, .pricing_container .expensive, .pricing_container .medium {
+  .pricing_container .container .cheap, .pricing_container .container .expensive, .pricing_container .container .medium {
     width: 100%;
     height: -webkit-min-content;
     height: -moz-min-content;

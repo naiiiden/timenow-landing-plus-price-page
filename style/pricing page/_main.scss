@@ -87,7 +87,7 @@ main {
 
         span {
             color: #425466;
-            font-size: .9rem;
+            font-size: .8rem;
         }
     }
 }
@@ -98,25 +98,29 @@ main {
     gap: 2rem;
 }
 
-.monthly {
+.yearly {
     display: none;
 }
 
-.yearly_bold {
+.monthly_bold {
     font-weight: 700;
 }
 
 .change_prices {
     .yearly {
-        display: none;
+        display: block;
     }
 
     .yearly_bold {
-        font-weight: 400;
+        font-weight: 700;
     }
 
     .monthly {
-        display: block;
+        display: none;
+    }
+
+    .monthly_bold {
+        font-weight: 400;
     }
 }
 
@@ -126,6 +130,12 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 
     .box {
         border: 1px solid #cdcdcd;
@@ -188,6 +198,12 @@ main {
 @media screen and (min-width: 768px) {
     main {
         padding: 1.5rem 3rem;
+
+        .monthly_yearly_wrapper {
+            span {
+                font-size: .9rem;
+            }
+        }
         
         .text_container {
             align-items: center;
@@ -201,19 +217,23 @@ main {
 
 
     .pricing_container {
-        flex-direction: row;
-        flex-wrap: wrap;
+        gap: 2rem;
 
-        .cheap, .expensive {
-            width: 48%;
+        .container {
+            flex-direction: row;
+            flex-wrap: wrap;
 
-            button {
-                margin-top: auto;
+            .cheap, .expensive {
+                width: 48%;
+    
+                button {
+                    margin-top: auto;
+                }
             }
-        }
-
-        .medium {
-            width: 100%;
+    
+            .medium {
+                width: 100%;
+            }
         }
     }
 }
@@ -222,6 +242,12 @@ main {
     main {
         padding: 5rem 12rem;
         gap: 3rem;
+
+        .monthly_yearly_wrapper {
+            span {
+                font-size: 1rem;
+            }
+        }
     }
 
     .prices {
@@ -229,13 +255,18 @@ main {
     }
 
     .pricing_container {
-        flex-wrap: nowrap;
         gap: 3rem;
 
-        .cheap, .expensive, .medium {
-            width: 100%;
-            height: min-content;
+        .container {
+            flex-wrap: nowrap;
+            gap: 3rem;
+
+            .cheap, .expensive, .medium {
+                width: 100%;
+                height: min-content;
+            }
         }
+
     }
 }
 
