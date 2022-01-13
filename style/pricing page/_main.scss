@@ -1,3 +1,5 @@
+
+
 .switch {
     position: relative;
     display: inline-block;
@@ -96,6 +98,30 @@ main {
     gap: 2rem;
 }
 
+.monthly {
+    display: none;
+}
+
+.yearly_bold {
+    font-weight: 700;
+}
+
+.change_prices {
+    .yearly {
+        display: none;
+    }
+
+    .yearly_bold {
+        font-weight: 400;
+    }
+
+    .monthly {
+        display: block;
+    }
+}
+
+
+
 .pricing_container {
     display: flex;
     flex-direction: column;
@@ -111,14 +137,16 @@ main {
         gap: 1.5rem;
 
         .price {
-            color: #000;
-            font-weight: 700;
-            font-size: 2rem;
+            .yearly, .monthly {
+                color: #000;
+                font-size: 2rem;
+                font-weight: 700;
 
-            span {
-                color:#425466;
-                font-size: 1rem;
-                font-weight: 400;
+                small {
+                    font-size: 1rem;
+                    color: #425466;
+                    font-weight: 400;
+                }
             }
         }
 

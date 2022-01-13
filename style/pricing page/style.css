@@ -278,6 +278,26 @@ main .monthly_yearly_wrapper span {
   gap: 2rem;
 }
 
+.monthly {
+  display: none;
+}
+
+.yearly_bold {
+  font-weight: 700;
+}
+
+.change_prices .yearly {
+  display: none;
+}
+
+.change_prices .yearly_bold {
+  font-weight: 400;
+}
+
+.change_prices .monthly {
+  display: block;
+}
+
 .pricing_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,15 +323,15 @@ main .monthly_yearly_wrapper span {
   gap: 1.5rem;
 }
 
-.pricing_container .box .price {
+.pricing_container .box .price .yearly, .pricing_container .box .price .monthly {
   color: #000;
-  font-weight: 700;
   font-size: 2rem;
+  font-weight: 700;
 }
 
-.pricing_container .box .price span {
-  color: #425466;
+.pricing_container .box .price .yearly small, .pricing_container .box .price .monthly small {
   font-size: 1rem;
+  color: #425466;
   font-weight: 400;
 }
 

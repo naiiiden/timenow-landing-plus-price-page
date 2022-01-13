@@ -30,17 +30,20 @@
         <section class="prices">
             
             <div class="monthly_yearly_wrapper">
-                <span class="monthly_bold">Billed Yearly</span>
+                <span class="yearly_bold">Billed Yearly</span>
                 <label class="switch">
                   <input type="checkbox" name="toggle" id="toggle" unchecked>
                   <span class="slider round"></span>
                 </label>
-                <span class="yearly_bold">Billed Monthly</span>
+                <span class="monthly_bold">Billed Monthly</span>
             </div>
 
-            <div class="pricing_container">
+            <div id="change" class="pricing_container change_prices">
                 <div class="box cheap">
-                    <p class="price">$4<span>/mo</span></p>
+                    <p class="price">
+                        <span class="yearly">$49<small>/mo</small></span>
+                        <span class="monthly">$4<small>/mo</small></span>
+                    </p>
                     <p>Perfect plan if you're just starting out.</p>
                     <div class="checkmarks_container">
                         <div class="checkmark">
@@ -59,7 +62,10 @@
                     <button><a aria-label="Subscribe" href="">Subscribe Now</a></button>
                 </div>
                 <div class="box expensive">
-                    <p class="price">$12<span>/mo</span></p>
+                    <p class="price">
+                        <span class="yearly">$140<small>/mo</small></span>
+                        <span class="monthly">$12<small>/mo</small></span>
+                    </p>
                     <p>Perfect plan if you're a heavy user of social media.</p>
                     <div class="checkmarks_container">
                         <div class="checkmark">
@@ -82,7 +88,10 @@
                     <button><a aria-label="Subscribe" href="">Subscribe Now</a></button>
                 </div>
                 <div class="box medium">
-                    <p class="price">$7<span>/mo</span></p>
+                    <p class="price">
+                        <span class="yearly">$80<small>/mo</small></span>
+                        <span class="monthly">$7<small>/mo</small></span>
+                    </p>
                     <p>Perfect plan if you're just starting out.</p>
                     <div class="checkmarks_container">
                         <div class="checkmark">
