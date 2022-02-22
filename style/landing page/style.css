@@ -146,6 +146,9 @@ img {
     border-radius: .25rem;
     font-weight: 700;
   }
+  header nav .nav-ul a:hover {
+    text-decoration: underline;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -328,6 +331,9 @@ main .data_container a {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .main_illustration_wrapper main .links_row a:hover {
+    text-decoration: underline;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -338,7 +344,9 @@ main .data_container a {
     font-size: 1.1rem;
   }
   .main_illustration_wrapper .mockup {
-    max-height: 40rem;
+    padding-top: 3rem;
+    padding-right: 3rem;
+    max-width: 45%;
   }
 }
 
@@ -561,6 +569,12 @@ main .data_container a {
   .features .text_wrapper .demo {
     padding-top: 1rem;
   }
+  .features .text_wrapper .demo:hover {
+    text-decoration: underline;
+  }
+  .features .text_wrapper button a:hover {
+    text-decoration: underline;
+  }
 }
 
 footer {
@@ -720,6 +734,9 @@ footer form .email_container .submit {
   }
   footer .logo_nav_wrapper nav {
     gap: 2rem;
+  }
+  footer .logo_nav_wrapper nav ul a:hover {
+    text-decoration: underline;
   }
   footer form {
     margin-top: 1rem;

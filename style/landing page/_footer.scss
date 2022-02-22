@@ -116,6 +116,12 @@ footer {
         .logo_nav_wrapper {
             nav {
                 gap: 2rem;
+
+                ul {
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
             }
         }
 

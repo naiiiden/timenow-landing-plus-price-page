@@ -111,6 +111,10 @@
                         border-radius: .25rem;
                         font-weight: 700;
                     }
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }
