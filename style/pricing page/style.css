@@ -127,6 +127,14 @@ img {
     padding: 3rem 12rem;
   }
 }
+.sr-only {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+}
+
 .switch {
   position: relative;
   display: inline-block;
