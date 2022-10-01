@@ -376,15 +376,13 @@ main .data_container a {
   color: #425466;
   font-weight: 500;
 }
-.features .text_wrapper button {
+.features .text_wrapper .scheduling_link {
   border: none;
   background: #1d1b67;
   color: #fff;
   padding: 1rem;
   border-radius: 0.25rem;
   font-weight: 700;
-}
-.features .text_wrapper button a {
   text-decoration: none;
   color: #fff;
   font-weight: 700;

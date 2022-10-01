@@ -27,20 +27,17 @@
             font-weight: 500;
         }
 
-        button {
+        .scheduling_link {
             border: none;
             background: #1d1b67;
             color: #fff;
             padding: 1rem;
             border-radius: .25rem;
             font-weight: 700;
-    
-            a {
-                text-decoration: none;
-                color: #fff;
-                font-weight: 700;
-                font-size: 1rem;
-            }
+            text-decoration: none;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1rem;
         }
 
         .demo {                
