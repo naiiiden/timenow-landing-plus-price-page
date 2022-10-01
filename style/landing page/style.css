@@ -147,7 +147,7 @@ main .links_row {
   align-items: center;
   gap: 1rem;
 }
-main .links_row button {
+main .links_row .scheduling_link {
   border: none;
   background: #1d1b67;
   color: #fff;
@@ -155,7 +155,7 @@ main .links_row button {
   border-radius: 0.25rem;
   font-weight: 700;
 }
-main .links_row button a {
+main .links_row .scheduling_link a {
   color: #fff;
   font-weight: 700;
   font-size: 1rem;
