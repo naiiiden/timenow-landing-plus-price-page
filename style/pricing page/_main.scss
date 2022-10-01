@@ -178,19 +178,17 @@ main {
             }
         }
 
-        button {
+        a {
             border: none;
             border-radius: .25rem;
             background: #1d1b67;
             padding: 1rem;
-        }
-
-        a {
             cursor: pointer;
             color: #fff;
             font-weight: 700;
             font-size: 1rem;
             text-decoration: none;
+            text-align: center;
         }
     }
 }

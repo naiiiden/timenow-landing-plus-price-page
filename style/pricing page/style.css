@@ -281,18 +281,17 @@ main .monthly_yearly_wrapper span {
   align-items: center;
   gap: 0.75rem;
 }
-.pricing_container .box button {
+.pricing_container .box a {
   border: none;
   border-radius: 0.25rem;
   background: #1d1b67;
   padding: 1rem;
-}
-.pricing_container .box a {
   cursor: pointer;
   color: #fff;
   font-weight: 700;
   font-size: 1rem;
   text-decoration: none;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
